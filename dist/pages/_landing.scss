@@ -1,0 +1,318 @@
+.version {
+    background: #25252B;
+
+    .container {
+        margin-left: 1.9rem;
+        margin-right: 1.9rem;
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+    }
+
+
+    &__wrapper {
+        text-align: center;
+        font-size: 1rem;
+
+        a {
+            color: $blue-text;
+            text-decoration: underline;
+        }
+
+        span {
+            color: $light;
+            font-weight: 100;
+        }
+    }
+
+}
+
+.redefined {
+    background: $primary-black;
+
+    .container{
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    &__wrapper {
+        .text {
+            h2 {
+                text-align: center;
+                color: $light;
+                font-size: 2.5rem;
+                font-weight: 400;
+
+                &:first-child {
+                    font-weight: 100;
+                }
+            }
+
+            .free {
+                text-align: center;
+                color: $gray-text
+            }
+
+        }
+
+
+        .middle {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .8rem;
+            margin-top: 1.5rem;
+
+            .windows-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: .13rem;
+
+                .btn.blue{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: .6rem 2.7rem;
+
+                    span{
+                        font-size: .8rem;
+                        font-weight: 100;
+                    }
+                }
+
+                i {
+                    background: $blue;
+                    color: $light;
+                    padding: 1.28rem 1rem;
+                    font-size: 1rem;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: #005ba4;
+                    }
+                }
+
+            }
+
+            .web {
+                // position: relative;
+
+                background: #25252B;
+                padding: .5rem 3.1rem;
+
+                text-align: center;
+                border-radius: 8px;
+                font-size: .75rem;
+
+                // i{
+                //     color: #25252B;
+                //     float: right;
+                //     // color: pink;
+                //     font-size: 1rem;
+                //     position: absolute;
+                //     right: 1rem;
+                //     top: -.5rem;
+                // }
+
+
+                a {
+
+                    color: $blue-text;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                span {
+                    color: $gray-text
+                }
+            }
+
+            .license {
+                text-align: center;
+                font-size: .7rem;
+                max-width: 12rem;
+                flex-wrap: wrap;
+
+
+
+                span {
+                    color: $gray-text
+                }
+
+                a {
+                    color: $blue-text;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+
+        img {
+            align-items: center;
+            margin-top: 1.5rem;
+            width: 28rem;
+        }
+
+    
+        @include mediaQuery($break-lg){
+
+            .container{
+                padding: 2rem;
+            }
+
+
+
+
+            &__wrapper{
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+
+                .contents{
+                    padding-top: 2rem;
+                }
+
+                .text {
+                    h2 {
+                        text-align: center;
+                        color: $light;
+                        font-size: 3rem;
+                        font-weight: 400;
+        
+                        &:first-child {
+                            font-weight: 100;
+                        }
+                    }
+        
+                    .free {
+                        text-align: center;
+                        font-size: 1.2rem;
+                        color: $gray-text
+                    }
+        
+                }
+        
+                img{
+                    margin-top: 0rem;
+                    width: 47rem;
+                    height: 37rem;
+                }
+
+
+                .middle {
+
+                    .windows-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: .13rem;
+        
+                        .btn.blue{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: .6rem 1rem;
+                            font-size: 1.1rem;
+        
+                            span{
+                                font-size: .8rem;
+                                font-weight: 100;
+                            }
+                        }
+        
+                        i {
+                            background: $blue;
+                            color: $light;
+                            padding: 1.35rem 1rem;
+                            font-size: 1rem;
+                            cursor: pointer;
+        
+                            &:hover{
+                                background-color: #005ba4;
+                            }
+                        }
+        
+                    }
+        
+                    .web {
+                        // position: relative;
+        
+                        background: #25252B;
+                        padding: .8rem 1.3rem;
+        
+                        text-align: center;
+                        border-radius: 8px;
+                        font-size: .8rem;
+        
+                        // i{
+                        //     color: #25252B;
+                        //     float: right;
+                        //     // color: pink;
+                        //     font-size: 1rem;
+                        //     position: absolute;
+                        //     right: 1rem;
+                        //     top: -.5rem;
+                        // }
+        
+        
+                        a {
+        
+                            color: $blue-text;
+        
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+        
+                        span {
+                            color: $gray-text
+                        }
+                    }
+        
+                    .license {
+                        text-align: center;
+                        font-size: .7rem;
+                        max-width: 12rem;
+                        flex-wrap: wrap;
+        
+        
+        
+                        span {
+                            color: $gray-text
+                        }
+        
+                        a {
+                            color: $blue-text;
+        
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+        
+        
+                    }
+                }
+
+
+
+
+
+
+
+            }
+
+
+        }
+
+
+}

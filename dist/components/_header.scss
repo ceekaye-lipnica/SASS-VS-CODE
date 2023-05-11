@@ -1,0 +1,275 @@
+.header{
+    background: $primary-black;
+
+    .container{
+        padding: .6rem 1rem;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__Nav1{
+        display: none;
+
+
+    }
+
+    &__Nav2{
+        background: $primary-black;
+        display: block;
+        position: absolute;
+        top: 3.1rem;
+        max-height: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: .8s ease;
+
+        &.open {
+            overflow-y: scroll;
+            max-height: 345px;
+            transition: .8s ease;
+        }
+
+        ul{
+            margin-left: 1rem;
+            li{
+                padding-top: 1.2rem;
+                a{
+                    color: $light;
+                }
+            }
+        }
+
+        .nav-btn{
+            align-items: center;
+
+            a{
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                margin-top: 1rem;
+                width: 100%;
+            }
+
+            img{
+                width: 1rem;
+            }
+        }
+    }
+    
+    .branding{
+        .logo{
+            display: flex;
+            align-items: end;
+            // align-items: center;
+            gap: .7rem;
+        }
+      
+        img{
+            width: 1.5rem;
+        }
+        h4{
+            color: $light;
+            font-size: 1.2rem;
+            font-weight: 400;
+            display: inline;
+        }
+
+        form, .nav1-btn{
+            display: none;
+        }
+    }
+
+    .toggle__menu{
+        cursor: pointer;
+        background-color: $primary-black;
+        padding: .5rem;
+
+        &.open{
+            background-color: $blue;
+            padding: .5rem;
+            border-radius: 3px;
+
+        }
+        span {
+            width: 1.5rem;
+            height: .13rem;
+            background-color: $light;
+            display: block;
+            border-radius: 5rem;
+
+            &:nth-child(2) {
+                margin: .3rem 0;
+            }
+
+        }
+    }
+
+
+    @include mediaQuery($break-lg){
+
+        .container{
+            max-width: 75rem;
+            padding: 0rem;
+        }
+
+        &__wrapper{
+            display: unset;
+            justify-content: unset;
+        }
+
+        .toggle__menu{
+            display: none;
+        }
+
+        &__Nav2{
+            ul{
+                display: none;
+            }
+        }
+
+        .branding{
+
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            gap: 12rem;
+
+            form, .nav1-btn{
+                display: unset;
+                align-items: right;
+            }
+
+            .right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                form{
+                    position: relative;
+
+                    i{
+                        color: $gray-text;
+                        font-size: .9rem;
+                        position: absolute;
+                        left: .8rem;
+                        bottom: 1.1rem;
+
+                        transform: rotate(90deg);
+                    }
+
+                    input{
+                        caret-color: $light;
+                        background-color: #39393e;
+                        height: 3rem;
+                        padding-left: 2.5rem;
+                        padding-right: 1rem;
+                        width: 12rem;
+                        border: none;
+                        // outline: 1px solid $light;
+
+                        &:hover{
+                            background-color: #4f4f57;
+                            transition: opacity .08s ease-in;
+                            outline: 1px solid $gray-text;
+                        }
+                        }
+                    }
+
+                    ::placeholder{
+                        font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+                        color: $gray-text;
+                        font-size: 1rem;
+                        font-weight: 100;
+
+                    }
+                }
+
+                .nav1-btn{
+                    a{
+                        img{
+                            width: 1rem;
+                        }
+                    }
+                    .btn.blue{
+                        padding: .9rem 1.5rem;
+                        border-radius: none;
+                        border: none;
+                    }
+                }
+            }
+
+          
+        }
+
+        &__Nav1{
+            display: unset;
+
+            ul{
+                display: flex;
+                gap: 1.5rem;
+                
+                li{
+                    a{
+                        font-size: 1rem;
+                        color: $gray-text;
+
+                        &:hover{
+                            color: $light;
+                        }
+                    }
+                }
+                
+
+            }
+
+
+        }
+
+        &:first-child{
+            ul{
+                li{
+                    &:first-child{
+                        margin-left: .1rem;
+                    }
+                }
+            }
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

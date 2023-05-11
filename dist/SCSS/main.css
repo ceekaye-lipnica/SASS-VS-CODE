@@ -1,0 +1,430 @@
+@charset "UTF-8";
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+}
+
+.btn.blue {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #0066b8;
+}
+
+.btn.blue:hover {
+  background-color: #005ba4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1.6rem;
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.version {
+  background: #25252B;
+}
+.version .container {
+  margin-left: 1.9rem;
+  margin-right: 1.9rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.version__wrapper {
+  text-align: center;
+  font-size: 1rem;
+}
+.version__wrapper a {
+  color: #279eff;
+  text-decoration: underline;
+}
+.version__wrapper span {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.redefined {
+  background: #2C2C32;
+}
+.redefined .container {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+.redefined__wrapper .text h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.redefined__wrapper .text h2:first-child {
+  font-weight: 100;
+}
+.redefined__wrapper .text .free {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+.redefined__wrapper .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+.redefined__wrapper .middle .windows-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.13rem;
+}
+.redefined__wrapper .middle .windows-btn .btn.blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6rem 2.7rem;
+}
+.redefined__wrapper .middle .windows-btn .btn.blue span {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.redefined__wrapper .middle .windows-btn i {
+  background: #0066b8;
+  color: #ffffff;
+  padding: 1.28rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.redefined__wrapper .middle .windows-btn i:hover {
+  background-color: #005ba4;
+}
+.redefined__wrapper .middle .web {
+  background: #25252B;
+  padding: 0.5rem 3.1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 0.75rem;
+}
+.redefined__wrapper .middle .web a {
+  color: #279eff;
+}
+.redefined__wrapper .middle .web a:hover {
+  text-decoration: underline;
+}
+.redefined__wrapper .middle .web span {
+  color: rgba(255, 255, 255, 0.6);
+}
+.redefined__wrapper .middle .license {
+  text-align: center;
+  font-size: 0.7rem;
+  max-width: 12rem;
+  flex-wrap: wrap;
+}
+.redefined__wrapper .middle .license span {
+  color: rgba(255, 255, 255, 0.6);
+}
+.redefined__wrapper .middle .license a {
+  color: #279eff;
+}
+.redefined__wrapper .middle .license a:hover {
+  text-decoration: underline;
+}
+.redefined img {
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 28rem;
+}
+@media screen and (min-width: 1080px) {
+  .redefined .container {
+    padding: 2rem;
+  }
+  .redefined__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .redefined__wrapper .contents {
+    padding-top: 2rem;
+  }
+  .redefined__wrapper .text h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .redefined__wrapper .text h2:first-child {
+    font-weight: 100;
+  }
+  .redefined__wrapper .text .free {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .redefined__wrapper img {
+    margin-top: 0rem;
+    width: 47rem;
+    height: 37rem;
+  }
+  .redefined__wrapper .middle .windows-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.13rem;
+  }
+  .redefined__wrapper .middle .windows-btn .btn.blue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+  }
+  .redefined__wrapper .middle .windows-btn .btn.blue span {
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+  .redefined__wrapper .middle .windows-btn i {
+    background: #0066b8;
+    color: #ffffff;
+    padding: 1.35rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .redefined__wrapper .middle .windows-btn i:hover {
+    background-color: #005ba4;
+  }
+  .redefined__wrapper .middle .web {
+    background: #25252B;
+    padding: 0.8rem 1.3rem;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+  .redefined__wrapper .middle .web a {
+    color: #279eff;
+  }
+  .redefined__wrapper .middle .web a:hover {
+    text-decoration: underline;
+  }
+  .redefined__wrapper .middle .web span {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .redefined__wrapper .middle .license {
+    text-align: center;
+    font-size: 0.7rem;
+    max-width: 12rem;
+    flex-wrap: wrap;
+  }
+  .redefined__wrapper .middle .license span {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .redefined__wrapper .middle .license a {
+    color: #279eff;
+  }
+  .redefined__wrapper .middle .license a:hover {
+    text-decoration: underline;
+  }
+}
+
+.header {
+  background: #2C2C32;
+}
+.header .container {
+  padding: 0.6rem 1rem;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header__Nav1 {
+  display: none;
+}
+.header__Nav2 {
+  background: #2C2C32;
+  display: block;
+  position: absolute;
+  top: 3.1rem;
+  max-height: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.8s ease;
+}
+.header__Nav2.open {
+  overflow-y: scroll;
+  max-height: 345px;
+  transition: 0.8s ease;
+}
+.header__Nav2 ul {
+  margin-left: 1rem;
+}
+.header__Nav2 ul li {
+  padding-top: 1.2rem;
+}
+.header__Nav2 ul li a {
+  color: #ffffff;
+}
+.header__Nav2 .nav-btn {
+  align-items: center;
+}
+.header__Nav2 .nav-btn a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+.header__Nav2 .nav-btn img {
+  width: 1rem;
+}
+.header .branding .logo {
+  display: flex;
+  align-items: end;
+  gap: 0.7rem;
+}
+.header .branding img {
+  width: 1.5rem;
+}
+.header .branding h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: inline;
+}
+.header .branding form, .header .branding .nav1-btn {
+  display: none;
+}
+.header .toggle__menu {
+  cursor: pointer;
+  background-color: #2C2C32;
+  padding: 0.5rem;
+}
+.header .toggle__menu.open {
+  background-color: #0066b8;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+.header .toggle__menu span {
+  width: 1.5rem;
+  height: 0.13rem;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 5rem;
+}
+.header .toggle__menu span:nth-child(2) {
+  margin: 0.3rem 0;
+}
+@media screen and (min-width: 1080px) {
+  .header .container {
+    max-width: 75rem;
+    padding: 0rem;
+  }
+  .header__wrapper {
+    display: unset;
+    justify-content: unset;
+  }
+  .header .toggle__menu {
+    display: none;
+  }
+  .header__Nav2 ul {
+    display: none;
+  }
+  .header .branding {
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+  }
+  .header .branding form, .header .branding .nav1-btn {
+    display: unset;
+    align-items: right;
+  }
+  .header .branding .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .branding .right form {
+    position: relative;
+  }
+  .header .branding .right form i {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    position: absolute;
+    left: 0.8rem;
+    bottom: 1.1rem;
+    transform: rotate(90deg);
+  }
+  .header .branding .right form input {
+    caret-color: #ffffff;
+    background-color: #39393e;
+    height: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    width: 12rem;
+    border: none;
+  }
+  .header .branding .right form input:hover {
+    background-color: #4f4f57;
+    transition: opacity 0.08s ease-in;
+    outline: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .header .branding .right ::-moz-placeholder {
+    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  .header .branding .right ::placeholder {
+    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  .header .branding .nav1-btn a img {
+    width: 1rem;
+  }
+  .header .branding .nav1-btn .btn.blue {
+    padding: 0.9rem 1.5rem;
+    border-radius: none;
+    border: none;
+  }
+}
+.header__Nav1 {
+  display: unset;
+}
+.header__Nav1 ul {
+  display: flex;
+  gap: 1.5rem;
+}
+.header__Nav1 ul li a {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header__Nav1 ul li a:hover {
+  color: #ffffff;
+}
+.header:first-child ul li:first-child {
+  margin-left: 0.1rem;
+}/*# sourceMappingURL=main.css.map */

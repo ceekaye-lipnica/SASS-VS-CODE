@@ -1,0 +1,31 @@
+
+$primary-black: #2C2C32;
+$blue: #0066b8;
+$light: #ffffff;
+$gray: #f5f5f5;
+$light-gray: #333333;
+$blue-text: #279eff;
+$gray-text: rgba(255,255,255,.6);
+
+$break-sm: 500px;
+$break-md: 768px;
+$break-lg: 1080px;
+$break-xl: 1920px;
+
+
+.btn{
+    display: inline-block;
+    padding: .8rem 1rem;
+}
+
+.btn.blue{
+    font-size: 1rem;
+    font-weight: 600;
+    color: $light;
+    background: #0066b8;
+} 
+
+.btn.blue:hover{
+    background-color: #005ba4;
+}
+
