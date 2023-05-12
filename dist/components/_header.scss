@@ -1,8 +1,14 @@
 .header{
     background: $primary-black;
+    // background: blue;
+    box-shadow: rgba(0,0,0,.33);
+
+    &__Nav1{
+        display: none;
+    }
 
     .container{
-        padding: .6rem 1rem;
+        padding: 1.5rem 1rem;
     }
 
     &__wrapper{
@@ -10,33 +16,29 @@
         justify-content: space-between;
     }
 
-    &__Nav1{
-        display: none;
-
-
-    }
 
     &__Nav2{
         background: $primary-black;
+        // background: red;
         display: block;
         position: absolute;
-        top: 3.1rem;
+        top: 5.8rem;
         max-height: 0;
         left: 0;
         width: 100%;
         overflow: hidden;
-        transition: .8s ease;
+        transition: .5s ease;
 
         &.open {
-            overflow-y: scroll;
-            max-height: 345px;
-            transition: .8s ease;
+            overflow-y: auto;
+            max-height: 305px;
+            transition: .5s ease;
         }
 
         ul{
             margin-left: 1rem;
             li{
-                padding-top: 1.2rem;
+                padding-top: 1.5rem;
                 a{
                     color: $light;
                 }
@@ -61,19 +63,20 @@
     }
     
     .branding{
+        // display: flex;
+
         .logo{
             display: flex;
             align-items: end;
             // align-items: center;
-            gap: .7rem;
+            gap: 1rem;
         }
-      
         img{
-            width: 1.5rem;
+            width: 2.5rem;
         }
         h4{
             color: $light;
-            font-size: 1.2rem;
+            font-size: 2rem;
             font-weight: 400;
             display: inline;
         }
@@ -82,6 +85,8 @@
             display: none;
         }
     }
+
+ 
 
     .toggle__menu{
         cursor: pointer;
@@ -95,8 +100,8 @@
 
         }
         span {
-            width: 1.5rem;
-            height: .13rem;
+            width: 2.5rem;
+            height: .2rem;
             background-color: $light;
             display: block;
             border-radius: 5rem;
@@ -111,11 +116,6 @@
 
     @include mediaQuery($break-lg){
 
-        .container{
-            max-width: 75rem;
-            padding: 0rem;
-        }
-
         &__wrapper{
             display: unset;
             justify-content: unset;
@@ -126,6 +126,8 @@
         }
 
         &__Nav2{
+            // display: none;
+            
             ul{
                 display: none;
             }
@@ -134,9 +136,9 @@
         .branding{
 
             display: flex;
-            // justify-content: space-between;
+            justify-content: space-between;
             align-items: center;
-            gap: 12rem;
+            gap: 2rem;
 
             form, .nav1-btn{
                 display: unset;
@@ -182,7 +184,7 @@
                     ::placeholder{
                         font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
                         color: $gray-text;
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                         font-weight: 100;
 
                     }
@@ -202,9 +204,7 @@
                 }
             }
 
-          
-        }
-
+            
         &__Nav1{
             display: unset;
 
@@ -214,7 +214,7 @@
                 
                 li{
                     a{
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                         color: $gray-text;
 
                         &:hover{
@@ -240,36 +240,9 @@
         }
         
 
-    }
+          
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 

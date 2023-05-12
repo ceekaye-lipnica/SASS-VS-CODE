@@ -157,10 +157,18 @@
     }
 
 
-        img {
-            align-items: center;
-            margin-top: 1.5rem;
-            width: 28rem;
+        .banner-img {
+            display: flex;
+            justify-content: center;
+            
+            img{
+                
+             
+                margin-top: 1.5rem;
+                width: 28rem;
+            }
+            
+           
         }
 
     
@@ -315,4 +323,148 @@
         }
 
 
+}
+
+.slider__banner{
+    // background: $gray;
+    background: pink;
+    position: relative;
+
+    .items{
+        display: flex;
+        align-items: start;
+        gap: 5rem;
+        margin: 2rem 2rem;
+
+        img{
+            border-radius: 50%;
+            width: 6rem;
+        }
+
+        .slider-text{
+
+            .feedback{
+
+                font-size: 1.2rem;
+                
+                a{
+                    color: $blue-text;
+                }
+            }
+
+            .slider-username{
+                display: block;
+                gap: .5rem;
+
+                a{
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+
+                p{
+                    color: $light-gray;
+                }
+            }
+
+            .slider-title{
+                display: flex;
+                justify-content: space-between;
+
+                i{
+                    color: #DEDEDF;
+                }
+            }
+        }
+
+    }
+
+    .tns-nav {
+        display: none;
+    }
+
+    .tns-controls{
+        z-index: 999;
+        position: absolute;
+        width: 88vw;
+        top: 50%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+        }
+    }
+
+    @include mediaQuery(1024px){
+
+        // .container{
+        //     max-width: 140rem;
+        // }
+        
+
+        .items{
+            gap: 3rem;
+            margin: 5rem;
+        }
+
+        #tns1 > .tns-item {
+            display: inline-flex;
+        }
+
+        .tns-controls{
+            width: 80vw;
+            
+        }
+
+    }
+
+}
+
+
+.services{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    &__items{
+        background: red;
+
+        &:nth-child(2), &:nth-child(4){
+            background: $gray;
+            width: fit-content;
+        }
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10rem;
+
+        max-width: 140rem;
+        margin: 0 auto;
+        // padding: 1.5rem;
+
+        padding: 6rem 0 6rem;
+        min-height: 30rem;
+
+        img{
+            width: 30rem;
+            margin-top: 1.75rem;
+        }
+    }
+
+    &__text{
+        h2{
+            font-size: 3rem;
+        }
+    }
 }
