@@ -1,6 +1,5 @@
 .header{
     background: $primary-black;
-    // background: blue;
     box-shadow: rgba(0,0,0,.33);
 
     &__Nav1{
@@ -9,6 +8,7 @@
 
     .container{
         padding: 1.5rem 1rem;
+        max-width: 140rem;
     }
 
     &__wrapper{
@@ -19,7 +19,6 @@
 
     &__Nav2{
         background: $primary-black;
-        // background: red;
         display: block;
         position: absolute;
         top: 5.8rem;
@@ -86,7 +85,6 @@
         }
     }
 
- 
 
     .toggle__menu{
         cursor: pointer;
@@ -109,12 +107,15 @@
             &:nth-child(2) {
                 margin: .3rem 0;
             }
-
         }
     }
 
 
     @include mediaQuery($break-lg){
+
+        .container{
+            padding: 0rem;
+        }
 
         &__wrapper{
             display: unset;
@@ -125,9 +126,8 @@
             display: none;
         }
 
-        &__Nav2{
-            // display: none;
-            
+        &__Nav2{      
+            display: none;
             ul{
                 display: none;
             }
@@ -155,10 +155,10 @@
 
                     i{
                         color: $gray-text;
-                        font-size: .9rem;
+                        font-size: 1.5rem;
                         position: absolute;
-                        left: .8rem;
-                        bottom: 1.1rem;
+                        left: 1.5rem;
+                        bottom: 1.8rem;
 
                         transform: rotate(90deg);
                     }
@@ -166,12 +166,11 @@
                     input{
                         caret-color: $light;
                         background-color: #39393e;
-                        height: 3rem;
-                        padding-left: 2.5rem;
+                        height: 5rem;
+                        padding-left: 4rem;
                         padding-right: 1rem;
-                        width: 12rem;
+                        width: 20rem;
                         border: none;
-                        // outline: 1px solid $light;
 
                         &:hover{
                             background-color: #4f4f57;
@@ -193,11 +192,11 @@
                 .nav1-btn{
                     a{
                         img{
-                            width: 1rem;
+                            width: 1.5rem;
                         }
                     }
                     .btn.blue{
-                        padding: .9rem 1.5rem;
+                        padding: 1.5rem;
                         border-radius: none;
                         border: none;
                     }
@@ -210,7 +209,7 @@
 
             ul{
                 display: flex;
-                gap: 1.5rem;
+                gap: 2rem;
                 
                 li{
                     a{
@@ -222,11 +221,7 @@
                         }
                     }
                 }
-                
-
             }
-
-
         }
 
         &:first-child{
@@ -238,11 +233,92 @@
                 }
             }
         }
-        
-
-          
         }
-
-
 }
+
+
+// .header{
+//     background: $primary-black;
+//     position: relative;
+//     &__wrapper{
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//     }
+//     .branding{
+//         display: flex;
+//         align-items: center;
+//         gap: 1rem;
+//         img{
+//             width: 3rem;
+//         }
+//         h4{
+//             color: $light;
+//         }
+//         ul{
+//             display: none;
+//         }
+//     }
+//     &__nav{
+//             background: $primary-black;
+//             position: absolute;
+//             top: 6rem;
+//             left: 0;
+//             width: 100%;
+//             max-height: 0rem;
+//             overflow: hidden;
+//             transition: .5s ease;
+
+//             &.open{
+//                 max-height: 51rem;
+//                 transition: .5s ease;
+//                 overflow-y: scroll;
+//             }
+//         ul{
+//             li{
+//                 padding: 2rem;
+//                 a{
+//                     color: $light;
+//                     font-size: 2rem;
+//                 }
+//                 &:hover{
+//                     cursor: pointer;
+//                 }
+//             }
+//         }
+//         .header__actions{
+//             ul{
+//                 li{
+//                     &:last-child{
+//                         background: blue;
+//                     }
+//                     a{
+//                         font-size: 2rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     .toggle__menu{
+
+//         &.open{
+//             background-color: $blue;
+//             padding: .5rem;
+//             border-radius: 3px;
+
+
+//         span{
+//             width: 3rem;
+//             height: .2rem;
+//             background-color: $light;
+//             display: block;
+
+//             &:nth-child(2){
+//                 margin: .5rem 0;
+//             }
+//         }
+//     }
+//     }
+
+// }
 

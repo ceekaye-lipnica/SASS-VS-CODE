@@ -19,7 +19,7 @@ $break-xl: 1920px;
 }
 
 .btn.blue{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: $light;
     background: #0066b8;
@@ -28,4 +28,30 @@ $break-xl: 1920px;
 .btn.blue:hover{
     background-color: #005ba4;
 }
+
+.btn.white{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: .3rem .5rem;
+    color: #333333;
+    background: $light;
+    border-radius: 5px
+} 
+
+.btn.white-blue{
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: .3rem .5rem;
+    color: #333333;
+    background: $light;
+    border-radius: 5px
+} 
+
+.btn.white:hover{
+    color: #333333;
+} 
+
+.btn.white-blue:hover{
+    color: #005ba4;
+} 
 

@@ -1,0 +1,139 @@
+.footer{
+    background: #333333;
+    padding: 1.5rem  0 0 0 ;
+
+    &__nav2{
+        display: none;
+    }
+
+    &__nav1{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin-left: 2rem;
+
+        a{
+            color: $light;
+            font-size: 1.3rem;
+
+            &:hover{
+                color: $gray-text;
+            }
+        }
+
+        span{
+            i{
+                padding-right: .3rem;
+            }
+        }
+        
+    }
+
+    .bottom{
+        margin-top: 2.5rem;
+        display: flex;
+        align-items: start;
+        gap: 3rem;
+
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            li{
+                a{
+                    font-size: 1.2rem;
+                    color: $light;
+
+                    &:hover{
+                        color: $gray-text;
+                    }
+                }
+            }
+        }
+
+        span{
+            img{
+                width: 9rem;
+                cursor: pointer;
+            }
+
+            p{
+                display: block;
+                color: $light;
+                font-size: 1.2rem;
+            }
+
+        }
+
+
+    }
+
+    
+    @include mediaQuery($break-lg){
+
+        &{
+            padding: 0 0 2rem 0;
+        }
+
+        &__nav1{
+            display: none;
+        }
+
+        &__nav2{
+            display: unset;
+        }
+
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__nav2{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-left: 2rem;
+
+            p{
+                color: $light;
+                font-size: 1.3rem;
+            }
+
+            a{
+                color: $light;
+                font-size: 1.3rem;
+    
+                &:hover{
+                    color: $gray-text;
+                }
+            }
+    
+            span{
+                i{
+                    padding-right: .3rem;
+                }
+            }
+            
+        }
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+}
